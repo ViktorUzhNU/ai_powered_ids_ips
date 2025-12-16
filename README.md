@@ -18,34 +18,6 @@
 
 
 
-## Project Structure
-
-/ai_powered_ids_ips
-│
-├── /data                        # Directory for storing data
-│   ├── captured_packets.csv     # Captured packets buffer (runtime)
-│   ├── alerts.log               # Log file for detected threats
-│   ├── GeoLite2-City.mmdb       # Database for IP geolocation
-│   └── [CSV files]              # CIC-IDS-2017/2019 files for training
-│
-├── /models                      # Directory for binary model files
-│   ├── rf_realistic_cicids.joblib      # Trained Random Forest model
-│   └── proto_encoder_realistic.joblib  # Protocol encoder
-│
-├── /src                         # Source code of the system core
-│   ├── download_datasets.py     # Module for downloading training data
-│   ├── train_model.py           # Script for model training and evaluation
-│   ├── sniffer.py               # Traffic sniffing module
-│   ├── realtime_detect.py       # Main threat detection module
-│   └── threat_intel.py          # AbuseIPDB integration module
-│
-├── /dashboard                   # GUI components
-│   └── app.py                   # Main Streamlit web application file
-│
-├── requirements.txt             # List of dependencies and libraries
-├── .gitignore                   # Rules for excluding files from Git
-└── README.md                    # User documentation
----
 
 ## Quickstart (Local)
 
